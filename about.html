@@ -1,0 +1,268 @@
+<doctype html>
+<html>
+<head>
+<title>About</title> 
+</head>
+<style>
+.column {
+ 
+  width: 50%;
+  padding: 0 8px;
+  margin: 30px;
+  text-align:center;
+}
+.card {
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
+.container:{
+ float: center;
+  clear: both;
+  display: table;
+}
+.button {
+  border-radius: 2px ;
+  display: inline-block;
+  padding: 8px;
+  background-color: grey;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #FFDAB9; 
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 20px;
+  transition: 0.5s;
+  
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.text{
+text-align:center;
+}
+ 
+ ol {
+		list-style: decimal;
+		margin: 2em;
+		padding-left: 3em;
+	}
+
+		ol li {
+			padding-left: 1.5em;
+		}
+
+	ul {
+		list-style: square;
+		margin: 2em;
+		padding-left: 2.5em;
+	}
+
+		ul li {
+			padding-left: 2em;
+		}
+
+		dl.alt {
+			list-style: none;
+			padding-left: 1em;
+		}
+
+			dl.alt dd {
+				border-top: dotted 1px ;
+				padding: 0.5em ;
+			}
+
+				dl.alt dt:first-child {
+					border-top: 0;
+					padding-left: 1em;
+				}
+table {
+		margin: 0 0 2em 0;
+		width: 100%;
+	}
+
+		table tbody tr {
+			border: solid 1px black;
+			border-left: 0;
+			border-right: 0;
+		}
+
+		table td {
+			padding: 0.75em 0.75em;
+		}
+
+		table th {
+			font-size: 0.9em;
+			font-weight: 600;
+			padding: 0 0.75em 0.75em 0.75em;
+			text-align: left;
+		}
+
+		table thead {
+			border-bottom: solid 2px;
+		}
+
+		table tfoot {
+			border-top: solid 2px;
+		}
+table tbody tr {
+		border-color: rgba(144, 144, 144, 0.25);
+	}
+table tbody tr:nth-child(2n + 1) {
+			background-color: rgba(144, 144, 144, 0.075);
+		}
+
+		
+	table th {
+		color: black;
+	}
+
+	table thead {
+		border-bottom-color: rgba(144, 144, 144, 0.25);
+	}
+
+	table tfoot {
+		border-top-color: rgba(144, 144, 144, 0.25);
+	}
+
+</style>
+<body>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Ivana Stanisljevic</h2>
+        <p style="font-family: Comic Sans MS;">Ucenik <em>"Gimnazije"</em> Gradiska. </p>
+        <p style="font-family:Courier New;">stanisljevici@icloud.com</p>
+        <p><button class="button"><a href="mailto:stanisljevic@icloud.com"><span>Contact</span></a></button></p>
+	  </div>
+    </div>
+  </div>
+  <br>
+  <hr>
+ <!-- Main -->
+			<div id="main" class="container1">
+
+							<!-- Text stuff -->
+							<div class="text">
+								<h3>Tekst</h3>
+								<p>Ovo je <b> podebljani </b> i ovo <strong> takođe </strong>.Ovo je <i> kosi </i> i ovo <em> takođe </em>.
+								Ovo je <sup> eksponent </sup> ovo je <sub> indeks </sub>.
+								Ovo je <u> podvučeno </u>.
+								 <p><a href="#"> Link </a>.</p>
+								<hr>
+								
+								<h2>Zaglavlje 2</h2>
+								<h3>Zaglavlje 3</h3>
+								<h4>Zaglavlje 4</h4>
+								<h5>Zaglavlje 5</h5>
+								<h6>Zaglavlje 6</h6>
+								</div>
+								<hr>
+							
+					
+							<!-- Lists -->
+								<h3>Liste</h3>
+								<div class="lists">
+									<div class="ul">
+
+										<h4>Nenumerisana</h4>
+										<ul>
+											<li>Dan bez smeha je izgubljen dan.</li>
+											<li>Nije bitno ko započinje igru već ko je završava.</li>
+											<li>Izgleda nemoguće, dokle god se ne završi.</li>
+										</ul>
+
+										<h4>Definisana</h4>
+										<dl class="alt">
+											<dt>Sloboda nije ništa drugo nego šansa da budeš bolji.</dt>
+											<dd>Hrabrost se nalazi na neočekivanim mestima. </dd>
+											<dd>Nade obrazovanih jače su od bogatstva neukih. </dd>
+										</dl>
+
+									</div>
+									<div class="ol">
+
+										<h4>Numerisana</h4>
+										<ol>
+											<li>Sadašnost je tačka koja je upravo prošla. </li>
+											<li>Da, istina je da ja uvek preduzmem više nego što mogu da ostvarim.</li>
+											<li>Svaka smela ideja u početku izgleda kao ludost. </li>
+	                                        <li>Sreća nam uvek daje prijatelje, ali nesreća ih proverava. </li>
+											</ol>
+									</div>
+							
+								
+							
+							<!-- Table -->
+								<h3>Tabela</h3>
+								
+								<div class="table">
+								<table>
+										<thead>
+											<tr>
+												<th>Ime</th>
+												<th>Prezime</th>
+												<th>Ušteđevina</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Petar</td>
+												<td>Marković</td>
+												<td>1.000</td>
+											</tr>
+											<tr>
+												<td>Sanja</td>
+												<td>Bajić</td>
+												<td>500</td>
+											</tr>
+											<tr>
+												<td>MIlenko</td>
+												<td> Pejić</td>
+												<td>2.000</td>
+											</tr>
+											<tr>
+												<td>Ana</td>
+												<td>Savić</td>
+												<td>600</td>
+											</tr>
+									    </tbody>
+										<tfoot>
+											<tr>
+												<td colspan="2"></td>
+												<td>4.100</td>
+											</tr>
+										</tfoot>
+									</table>
+								</div>
+
+							<!-- Image -->
+								
+
+								<h4>Lijeva i desna</h4>
+								<p><span class="image left" style="float:left"><img src="images/html.jpg" alt="" /></span>HTML5 je prijedlog novih standarda koji nam pružaju nove mogućnosti, kao i da isprave i nadomjeste neke dosadašnje nedostatke. Radi se o novoj verziji HTML-a, koja donosi niz novina i mogućnosti koje do sada nisu bile dostupne koristiti za izradu veb sajtova bez dodatnih dodataka (енгл. plugin), kao što su Flash, Java i Silverlight. HTML5 predstavlja evoluciju HTML 4.01 standarda, a ne zamenu.</p>
+								<p><span class="image right"><img src="images/css.jpg" style="float:right" alt="" /></span>Kako se web razvijao, prvobitno su u HTML ubacivani elementi za definiciju prezentacije (npr. tag <font>), ali je dovoljno brzo uočena potreba za stilskim jezikom koji će HTML osloboditi potrebe prikazivanja sadržaja (što je prvenstvena namjena HTML-a) i njegovog oblikovanja (čemu danas služi CSS). Drugim riječima, stil definira kako prikazati HTML elemente. CSS-om se uređuje sam izgled i raspored stranice.</p>
+							 
+</body>
+</html>
